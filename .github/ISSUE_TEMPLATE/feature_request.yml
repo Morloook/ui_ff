@@ -1,0 +1,34 @@
+name: Feature request
+description: Propose a new behavior or improvement for FFmpeg UI.
+title: "[Feature]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem should this solve?
+      description: Describe the use case, not only a possible interface.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe the expected result.
+    validations:
+      required: true
+
+  - type: textarea
+    id: ffmpeg_context
+    attributes:
+      label: Related FFmpeg or FFprobe options
+      description: Include option names, component names, or example arguments.
+      render: shell
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Request checklist
+      options:
+        - label: I searched for an existing request for this feature.
+          required: true
