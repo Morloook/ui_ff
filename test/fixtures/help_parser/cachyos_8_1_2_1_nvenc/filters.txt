@@ -1,0 +1,13 @@
+Filters:
+  T.. = Timeline support
+  .S. = Slice threading
+  A = Audio input/output
+  V = Video input/output
+  N = Dynamic number and/or type of input/output
+  | = Source or sink filter
+  ------
+ TS aap               AA->A      Apply Affine Projection algorithm to first audio stream.
+ .. abench            A->A       Benchmark part of a filtergraph.
+ .. acrossfade        N->A       Cross fade two input audio streams.
+ .S acrossover        A->N       Split audio into per-bands streams.
+ .. scale             V->V       Scale the input video size and/or convert the image format.

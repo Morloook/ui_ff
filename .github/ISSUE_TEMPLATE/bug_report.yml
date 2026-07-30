@@ -1,0 +1,75 @@
+name: Bug report
+description: Report a repeatable problem in FFmpeg UI.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not attach private media, full local paths, or metadata that you do
+        not want to disclose publicly.
+
+  - type: input
+    id: app_version
+    attributes:
+      label: FFmpeg UI version
+      placeholder: "1.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: operating_system
+    attributes:
+      label: Operating system
+      options:
+        - Linux
+        - Windows
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the actual behavior and what you expected instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open …
+        2. Select …
+        3. Run …
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: FFmpeg environment
+      description: |
+        Include `ffmpeg -version` and `ffprobe -version`. Remove local paths or
+        other sensitive data first.
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: Remove private file names, metadata, and local paths before
+        submitting.
+      render: text
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Report checklist
+      options:
+        - label: I searched for an existing report of this issue.
+          required: true
+        - label: I removed private and sensitive data.
+          required: true
