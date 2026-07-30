@@ -1,0 +1,6 @@
+Encoders:
+ V....D h264_nvenc           NVIDIA NVENC H.264 encoder (codec h264)
+ V..... h264_qsv             H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10 (Intel Quick Sync Video acceleration) (codec h264)
+ V....D hevc_nvenc           NVIDIA NVENC hevc encoder (codec hevc)
+ V....D hevc_vaapi           H.265/HEVC (VAAPI) (codec hevc)
+ A..... libmp3lame           MP3 (MPEG audio layer 3)

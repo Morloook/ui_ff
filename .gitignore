@@ -1,0 +1,178 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+
+# Expo
+build/
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+android/key.properties
+
+# Klucze podpisujące (kopie zapasowe)
+key/
+
+# Paczki dystrybucyjne
+export/*
+!export/.gitkeep
+skrypty/
+tools/clean_flutter_generated.sh
+tools/linuxdeploy-*.AppImage
+tools/appimagetool-*.AppImage
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# Lokalne ustawienia, bazy i sekrety
+.env
+.env.*
+!.env.example
+options.json
+options.invalid-*.json
+*.sqlite
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+credentials.json
+secrets.json
+
+# typescript
+*.tsbuildinfo
+
+app-example
+
+# Flutter / Dart
+.dart_tool/
+.pub-cache/
+.pub/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+*.dill
+coverage/
+
+# IDE / Edytory
+.idea/
+*.iml
+.vscode/*
+!.vscode/launch.json
+
+# Pliki tymczasowe
+# Folder pdf/ zawiera tymczasowe pliki testowe dla projektu (nie ma potrzeby dodawać ich do repozytorium)
+pdf/
+*.tmp
+*.temp
+*.swp
+*.swo
+*.log
+*.cache
+*.diff
+*.patch
+*.rej
+*.dmp
+.~*
+*.~*
+*~
+
+# Foldery tymczasowe
+tmp/
+temp/
+.tmp/
+.temp/
+cache/
+.cache/
+
+# Kopie zapasowe i wersje
+*.bak
+*.kopia
+*.old
+*.backup
+*kopia*
+*Kopia*
+*backup*
+*Backup*
+*.sav
+*.save
+*.copy
+*.orig
+*~1~
+
+# Lokalne media testowe. Zasoby aplikacji w img/ i sfx/ są wersjonowane.
+test_media/
+media_local/
+video/
+videos/
+pictures_local/
+
+
+# Pliki wideo
+*.mp4
+*.avi
+*.mkv
+*.mov
+*.wmv
+*.flv
+*.webm
+*.m4v
+*.3gp
+*.ogg
+*.mpg
+*.mpeg
+*.m2ts
+*.mts
+*.vob
+*.f4v
+*.mxf
+*.rm
+*.rmvb
+*.asf
+*.amv
+*.m4p
+
+# Archiwa
+*.zip
+*.rar
+*.tar
+*.gz
+*.7z
+*.bz2
+*.xz
+*.lz
+*.lzma
+*.tgz
+*.tbz2
+*.txz
+*.z
+*.iso
+*.cab
+*.arj
+*.lzh
+*.ace
+*.sit
+*.sitx
+*.pea
+*.dmg
+*.bin
+*.pak

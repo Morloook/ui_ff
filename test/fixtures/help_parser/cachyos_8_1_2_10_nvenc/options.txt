@@ -1,0 +1,15 @@
+Encoder h264_nvenc [NVIDIA NVENC H.264 encoder]:
+    General capabilities: dr1 delay hardware
+h264_nvenc AVOptions:
+  -preset            <int>        E..V....... Set the encoding preset (from 0 to 18) (default p4)
+     default         0            E..V.......
+     slow            1            E..V....... hq 2 passes
+     p4              15           E..V....... medium (default)
+     p7              18           E..V....... slowest (best quality)
+  -tune              <int>        E..V....... Set the encoding tuning info (from 1 to 4) (default hq)
+     hq              1            E..V....... High quality
+     lossless        4            E..V....... Lossless
+  -rc-lookahead      <int>        E..V....... Number of frames to look ahead for rate-control (from 0 to INT_MAX) (default 0)
+  -gpu               <int>        E..V....... Selects which NVENC capable GPU to use. First GPU is 0, second is 1, and so on. (from -2 to INT_MAX) (default any)
+     any             -1           E..V....... Pick the first device available
+     list            -2           E..V....... List the available devices

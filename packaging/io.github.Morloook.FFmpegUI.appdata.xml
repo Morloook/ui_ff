@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.Morloook.FFmpegUI</id>
+  <name>FFmpeg UI</name>
+  <summary>Desktop interface for locally installed FFmpeg and FFprobe</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <developer id="io.github.morloook">
+    <name>Morloook</name>
+  </developer>
+  <description>
+    <p>FFmpeg UI detects the capabilities of the locally installed FFmpeg and FFprobe tools, provides a searchable catalog, inspects media files, builds commands, and queues jobs.</p>
+    <p>FFmpeg and FFprobe are not bundled. The user installs them separately or selects their paths in the application.</p>
+  </description>
+  <launchable type="desktop-id">io.github.Morloook.FFmpegUI.desktop</launchable>
+  <provides>
+    <binary>ffmpeg_ui</binary>
+  </provides>
+  <url type="homepage">https://github.com/Morloook/ui_ff</url>
+  <categories>
+    <category>AudioVideo</category>
+    <category>AudioVideoEditing</category>
+  </categories>
+  <content_rating type="oars-1.1" />
+</component>

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=FFmpeg UI
+Comment=Desktopowy interfejs dla FFmpeg i FFprobe
+Exec=ffmpeg_ui
+Icon=ffmpeg_ui
+Categories=AudioVideo;AudioVideoEditing;
+Terminal=false
